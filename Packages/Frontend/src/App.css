@@ -1,0 +1,26 @@
+.simulator {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));  
+  border: 1px solid black;
+  padding: 5px;
+}
+.round {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid black;
+}
+.points {
+  display: flex;
+}
+.box1, .box2, .box3 {
+    width: 33%;
+}
+span {
+  display: block;
+  border: 1px solid black;
+  margin: 1px;
+}
+.results {
+  width: 100%;
+}

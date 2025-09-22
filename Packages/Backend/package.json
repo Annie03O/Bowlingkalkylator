@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup src/server.ts --format cjs,esm",
+    "prepack": "npm run build",
+    "dev": "npx tsx server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@annie/bowling-core": "file:../Bowling-core",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "express": "^5.1.0",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.5"
+  }
+}
